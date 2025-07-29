@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Skills - Pavani Karnati{% endblock %}
+
+{% block content %}
+<section class="skills-section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    {% for skill in skills %}
+    <div class="skill-item">
+      <i class="{{ skill.icon }}"></i>
+      <p>{{ skill.name }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
